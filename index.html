@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Priority Notes</title>
+</head>
+<body>
+  <header>
+    <div id="userInput">
+    <h2>Priority Notes</h2>
+      <input type="text" placeholder="Add priority list" id="task">
+      <h4>Set Priority Level: </h4>
+      <select name="priorities" id="priorities">
+        <option value="urgent">Urgent</option>
+        <option value="medium">Medium Priority</option>
+        <option value="low">Low priority</option>
+      </select>
+      <button type="button" onclick="addTask()">Add Task</button>
+    </div>
+  </header>
+  <main>
+    <div class="task" id="urgent"><h3>Urgent</h3>
+      <button type="button" onclick="removeTask()">Remove Selected Task</button>
+    </div>
+    <div class="task" id="medium"><h3>Medium Priority</h3>
+      <button type="button" onclick="removeTask()">Remove Selected Task</button>
+    </div>
+    <div class="task" id="low"><h3>Low Priority</h3>
+      <button type="button" onclick="removeTask()">Remove Selected Task</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
